@@ -1,5 +1,5 @@
-read -p "Enter AWS access key" AWS_ACCESS_KEY
-read -p "Enter AWS secret key" AWS_SECRET_KEY
+read -p "Enter AWS access key: " AWS_ACCESS_KEY
+read -p "Enter AWS secret key: " AWS_SECRET_KEY
 docker build -t deepkeep-docker-registry .
 docker run -d -p 443:443 \
     -v `pwd`/certs:/certs \

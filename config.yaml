@@ -28,7 +28,7 @@ storage:
         uploadpurging:
             enabled: false
 http:
-    addr: :5000
+    addr: :443
     secret: asecretforlocaldevelopment
     debug:
         addr: localhost:5001

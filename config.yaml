@@ -21,8 +21,9 @@ log:
 storage:
     cache:
         blobdescriptor: redis
-    filesystem:
-        rootdirectory: /var/lib/registry
+    s3:
+        bucket: deepkeep-docker-registry
+        region: us-west-2
     maintenance:
         uploadpurging:
             enabled: false
